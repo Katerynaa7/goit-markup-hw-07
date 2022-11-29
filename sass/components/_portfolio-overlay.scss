@@ -19,11 +19,13 @@
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover .portfolio-overlay {
+    transform: translateY(0%);
+    animation: bottom-to-top 1000ms ease 200ms 1 both;
+  }
 }
-.portfolio-examples-link:hover .portfolio-overlay {
-  transform: translateY(0%);
-  animation: bottom-to-top 1000ms ease 200ms 1 both;
-}
+
 .portfolio-thumb {
   overflow: hidden;
 }

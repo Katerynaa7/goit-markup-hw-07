@@ -21,20 +21,18 @@ address {
 
 .site-contact-list .link-general {
   margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
 }
-.site-contact-list .link-general:last-child {
-  margin-bottom: 0px;
-}
+
 .site-contact-list .link-location {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--additional-color);
 }
 
-.site-contact-list .link-contact-list:hover,
-.site-contact-list .link-contact-list:focus {
-  color: var(--accent-color);
-}
 .site-contact-list .link-contact-list {
   text-decoration: none;
   list-style: none;
@@ -46,6 +44,11 @@ address {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-contact {
@@ -90,12 +93,13 @@ address {
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+    /* color: var(--additional-color); */
+  }
 }
 .socials-icon {
   fill: var(--additional-color);
-}
-.socials-link:hover,
-.socials-link:focus {
-  background-color: #2196f3;
-  /* color: var(--additional-color); */
 }

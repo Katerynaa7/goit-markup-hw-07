@@ -8,9 +8,10 @@
 }
 .features__list .features__descr {
   margin-right: 30px;
-}
-.features__list .features__descr:last-child {
-  margin-right: 0px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
 .features__wrapper {

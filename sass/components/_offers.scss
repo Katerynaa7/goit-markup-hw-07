@@ -18,9 +18,10 @@
 .offers__list .offers__ex {
   position: relative;
   margin-right: 30px;
-}
-.offers__list .offers__ex:last-child {
-  margin-right: 0px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
 .offers__overlay {
