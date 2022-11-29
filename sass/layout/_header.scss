@@ -1,6 +1,8 @@
 .header {
   border: 1px solid #ececec;
+  background-color: var(--additional-color);
 }
+
 .header-container {
   display: flex;
   align-items: center;
